@@ -1,0 +1,94 @@
+:root {
+    --primario: #74c0ff;
+    --secundario: #ABD9FF;
+    --tercero: #11558c;
+    --negro: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--primario);
+}
+
+h1 {
+    margin-top: 100px;
+    text-align: center;
+    color: var(--negro);  
+}
+
+form {
+    
+    width: 400px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+form input[type="text"] {
+    background-color: var(--primario);
+    color: var(--negro);
+    border-style: none;
+    font-size: 1.5em;
+}
+
+form input[type="text"]::placeholder {
+    color: var(--negro);
+}
+
+form input[type="text"]:focus {
+    outline: none;
+}
+
+form input[type="submit"] {
+    width: 40px;
+    height: 40px;
+    font-size: 2em;
+    border-radius: 50%;
+    border-style: none;
+    color: var(--primario);
+    
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--tercero);
+    cursor: pointer;
+    color: white;
+}
+
+.list-container {
+    
+    width: 400px;
+    margin: 0 auto;
+}
+
+.task-container {
+    background-color: white;
+    display: flex;
+    justify-content:space-between;
+    margin: 6px;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: gray;
+}
+
+.closeBtn {
+    width: 20px;
+    height: 20px;
+}
+
+.closeBtn:hover {
+    cursor: pointer;
+}
+
+#stats {
+    margin-top: 25px;
+    font-size: 1.3em;
+    color: var(--tercero);
+    text-align: center;
+}
